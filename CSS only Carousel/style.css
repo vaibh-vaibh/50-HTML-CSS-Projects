@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    width: 1000%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 10%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Radio Button Logic */
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .carousel-slides {
+    transform: translateX(0);
+}
+
+ #slide2:checked ~ .carousel-slides {
+    transform: translateX(-10%); 
+} 
+
+#slide3:checked ~ .carousel-slides {
+    transform: translateX(-20%);
+}
+
+#slide4:checked ~ .carousel-slides {
+    transform: translateX(-30%);
+}
+
+#slide5:checked ~ .carousel-slides {
+    transform: translateX(-40%);
+}
+
+#slide6:checked ~ .carousel-slides {
+    transform: translateX(-50%);
+}
+
+#slide7:checked ~ .carousel-slides {
+    transform: translateX(-60%);
+}
+
+ #slide8:checked ~ .carousel-slides {
+    transform: translateX(-70%); 
+} 
+
+#slide9:checked ~ .carousel-slides {
+    transform: translateX(-80%);
+}
+
+#slide10:checked ~ .carousel-slides {
+    transform: translateX(-90%);
+}
+
+/* Navigation Dots */
+.carousel-navigation {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.nav {
+    width: 15px;
+    height: 15px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="radio"]:checked + .carousel-navigation .nav {
+    background: #333;
+}
