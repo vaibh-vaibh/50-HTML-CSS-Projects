@@ -6,25 +6,31 @@
   }
   
   /* Body and background */
-  body {
-    background-color: #f1f1f1;
+
+  body{
+    background-color: red;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  #sticky {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-wrap: wrap;
     gap: 20px;
-    font-family: Arial, sans-serif;
   }
   
   /* Sticky note styling */
   .note {
-    background-color: #ffeb3b;
+    background-color: yellow;
     width: 250px;
     height: 200px;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px black;
     position: relative;
     transition: transform 0.3s ease;
   }
@@ -44,7 +50,7 @@
   .note-header h3 {
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: blue;
   }
   
   /* Close button */
@@ -52,7 +58,7 @@
     background-color: transparent;
     border: none;
     font-size: 18px;
-    color: #333;
+    color: black;
     cursor: pointer;
     transition: color 0.3s ease;
   }
@@ -65,7 +71,7 @@
   .note-content {
     margin-top: 10px;
     font-size: 14px;
-    color: #555;
+    color: red;
     line-height: 1.5;
   }
   
