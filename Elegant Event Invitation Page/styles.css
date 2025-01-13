@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.invitation-card {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 1.6em;
+    color: #333;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0 20px;
+    font-style: italic;
+}
+
+.details {
+    margin: 20px 0;
+    text-align: left;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.details p {
+    margin: 10px 0;
+}
+
+.rsvp-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rsvp-btn:hover {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    transform: scale(1.05);
+}
+
+.footer {
+    background: #f7f7f7;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.footer a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 540px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .content h2 {
+        font-size: 1.4em;
+    }
+
+    .details {
+        font-size: 1em;
+    }
+
+    .rsvp-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}

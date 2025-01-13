@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:rgb(50, 94, 144);
+    color: #333;
+}
+
+.invitation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.header {
+    background-color: #6200ea;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 10px 10px 0 0;
+}
+.content {
+    padding: 20px;
+}
+.event-details {
+    margin: 20px 0;
+    text-align: left;
+    font-size: 1.2em;
+}
+.event-details p {
+    margin: 10px 0;
+}
+.rsvp-button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.rsvp-button:hover {
+    background-color: #3700b3;
+}
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* responsiveness */
+@media (max-width: 1200px) {
+    .invitation-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-details {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 540px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .content h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 440px) {
+    .rsvp-button {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .event-details p {
+        font-size: 0.9em;
+    }
+}
