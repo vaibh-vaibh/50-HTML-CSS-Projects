@@ -1,0 +1,51 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  .container {
+    text-align: center;
+    font-size: 2rem;
+    color: #007acc;
+  }
+  
+  .typing-effect {
+    display: inline-block;
+    border-right: 3px solid #007acc;
+    padding-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+  }
+  
+  .typed-text {
+    font-weight: bold;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  

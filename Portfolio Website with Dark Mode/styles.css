@@ -1,0 +1,153 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.toggle-btn {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-btn span {
+    margin-left: 10px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Dark Mode Styles */
+#darkModeToggle:checked ~ header {
+    background-color: #1f1f1f;
+}
+
+#darkModeToggle:checked ~ header h1,
+#darkModeToggle:checked ~ header nav ul li a {
+    color: #fff;
+}
+
+#darkModeToggle:checked ~ footer {
+    background-color: #1f1f1f;
+}
+
+#darkModeToggle:checked ~ footer p {
+    color: #fff;
+}
+
+#darkModeToggle:checked ~ .toggle-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+#darkModeToggle:checked ~ section {
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 440px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 568px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
