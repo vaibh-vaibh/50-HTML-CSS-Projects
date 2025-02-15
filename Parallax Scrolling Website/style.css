@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color:red;
+    -webkit-font-smoothing: antialiased;
+}
+
+.parallax-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -webkit-background-attachment: fixed;
+}
+
+.section1 {
+    background-image: url('asphalt.jpg');
+}
+
+.section2 {
+    background-image: url('freefire.jpg');
+}
+
+.section3 {
+    background-image: url('harry potter.jpg');
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    -webkit-text-stroke: 1px black;
+}
+
+.content-section {
+    padding: 50px;
+    background: orange;
+    color: #333;
+    font-size: 18px;
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,33 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right,rgb(247, 5, 5),rgb(251, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+.todo-container {
+    width: 350px;
+    background: rgb(16, 34, 8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(233, 25, 10, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+.todo-item {
+    background: rgba(7, 241, 66, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    -webkit-user-select: none;
+    text-align: center;
+}

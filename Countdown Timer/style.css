@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    flex-direction: column;
+}
+
+.countdown-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+circle {
+    fill: none;
+    stroke-width: 6;
+    stroke: rgba(255, 255, 255, 0.3);
+}
+
+.progress {
+    stroke: white;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    animation: countdown 10s linear forwards;
+    -webkit-animation: countdown 10s linear forwards;
+}
+
+@keyframes countdown {
+    0% { stroke-dashoffset: 283; }
+    100% { stroke-dashoffset: 0; }
+}
+
+.count {
+    position: absolute;
+    margin-top: 22px;
+    margin-right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count::after {
+    content: "10";
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.9;
+    color: white;
+    position: absolute;
+    animation: numberChange 10s steps(10) forwards;
+    -webkit-animation: numberChange 10s steps(10) forwards;
+}
+
+@keyframes numberChange {
+    0% { content: "10"; }
+    10% { content: "9"; }
+    20% { content: "8"; }
+    30% { content: "7"; }
+    40% { content: "6"; }
+    50% { content: "5"; }
+    60% { content: "4"; }
+    70% { content: "3"; }
+    80% { content: "2"; }
+    90% { content: "1"; }
+    100% { content: "0"; }
+}

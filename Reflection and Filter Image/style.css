@@ -1,0 +1,110 @@
+body {
+    background-color: #222;
+    min-height: 100vh;
+    color: white;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    padding: 20px;
+}
+
+.imgimg {
+    width: 80%;
+    height:50vh;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.bw {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+}
+
+.blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.reflection {
+    transform: scaleY(-1);
+    opacity: 0.6;
+    -webkit-transform: scaleY(-1);
+}
+
+.Brightness {
+    filter: brightness(150%);
+    -webkit-filter: brightness(150%);
+}
+
+.Contrast {
+    filter: contrast(200%);
+    -webkit-filter: contrast(200%);
+}
+
+.Hue-Rotate {
+    filter: hue-rotate(90deg);
+    -webkit-filter: hue-rotate(90deg);
+}
+
+.Invert {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.Opacity {
+    filter: opacity(50%);
+    -webkit-filter: opacity(50%);
+}
+
+.Saturate {
+    filter: saturate(300%);
+    -webkit-filter: saturate(300%);
+}
+
+.Drop\ Shadow {
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.7));
+    -webkit-filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.7));
+}
+
+.Multiple\ Filters\ Combined {
+    filter: grayscale(50%) sepia(30%) blur(2px) brightness(120%) contrast(150%);
+    -webkit-filter: grayscale(50%) sepia(30%) blur(2px) brightness(120%) contrast(150%);
+}
+
+.Shadow-outline\ Effect {
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+.Skew\ Effect {
+    transform: skewX(15deg);
+    -webkit-transform: skewX(15deg);
+}
+
+.Rotate\ Effect {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+}
+
+.Perspective {
+    transform: perspective(500px) rotateY(30deg);
+    -webkit-transform: perspective(500px) rotateY(30deg);
+}
+
+.Clip-Path {
+    clip-path: circle(50%);
+    -webkit-clip-path: circle(50%);
+}
+
+.Background\ Blend\ Mode {
+    background-blend-mode: multiply;
+}
+

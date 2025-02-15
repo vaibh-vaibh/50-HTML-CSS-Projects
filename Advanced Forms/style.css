@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background: #f4f4f4;
+}
+.container {
+    background: white;
+    padding: 25px;
+    width: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    transition: 0.3s;
+    font-size: 16px;
+}
+input:focus, textarea:focus, select:focus {
+    border-color: #007BFF;
+}
+label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #999;
+    font-size: 14px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    top: -12px;
+    font-size: 12px;
+    color: #007BFF;
+}
+.custom-dropdown select {
+    appearance: none;
+    background: #fff;
+    cursor: pointer;
+}
+textarea {
+    resize: none;
+    overflow: hidden;
+}
+.range-slider input {
+    width: 100%;
+    cursor: pointer;
+}
+input[type="date"] {
+    background: white;
+    cursor: pointer;
+}
+.multi-step-form {
+    display: flex;
+    justify-content: center;
+}
+.multi-step-form input {
+    display: none;
+}
+.multi-step-form .steps label {
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+.multi-step-form input:checked + .steps label {
+    background: #007BFF;
+    color: white;
+}
+.password-field input {
+    border-bottom: 3px solid red;
+}
+.password-field input:valid {
+    border-bottom: 3px solid green;
+}
+.custom-select select {
+    appearance: none;
+    background: white;
+    cursor: pointer;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}

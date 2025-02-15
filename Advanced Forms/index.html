@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS-Only Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Advanced CSS-Only Form</h2>
+        
+        <!-- Floating Label Input -->
+        <div class="form-group">
+            <input type="text" required>
+            <label>Full Name</label>
+        </div>
+
+        <!-- Custom Dropdown -->
+        <div class="form-group custom-dropdown">
+            <select>
+                <option selected disabled>Select an option</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+        </div>
+
+        <!-- Styled File Upload -->
+        <div class="form-group file-upload">
+            <input type="file" id="file">
+            <label for="file">Choose File</label>
+        </div>
+
+        <!-- Search Bar with Animated Placeholder -->
+        <div class="form-group search-bar">
+            <input type="text" required>
+            <label>Search...</label>
+        </div>
+
+        <!-- Auto-Expanding Textarea -->
+        <div class="form-group">
+            <textarea rows="1" required></textarea>
+            <label>Enter Message</label>
+        </div>
+
+        <!-- Custom Range Slider -->
+        <div class="form-group range-slider">
+            <input type="range" min="0" max="100">
+        </div>
+
+        <!-- CSS-Only Date Picker -->
+        <div class="form-group">
+            <input type="date">
+        </div>
+
+        <!-- Multi-Step Form -->
+        <div class="multi-step-form">
+            <input type="radio" id="step1" name="step" checked>
+            <input type="radio" id="step2" name="step">
+            <input type="radio" id="step3" name="step">
+            
+            <div class="steps">
+                <label for="step1">Step 1</label>
+                <label for="step2">Step 2</label>
+                <label for="step3">Step 3</label>
+            </div>
+        </div>
+
+        <!-- Password Strength Indicator -->
+        <div class="form-group password-field">
+            <input type="password" required>
+            <span class="strength"></span>
+            <label>Password</label>
+        </div>
+
+        <!-- Custom Select Box -->
+        <div class="form-group custom-select">
+            <select>
+                <option selected disabled>Select an option</option>
+                <option>Choice A</option>
+                <option>Choice B</option>
+                <option>Choice C</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </div>
+
+</body>
+</html>
